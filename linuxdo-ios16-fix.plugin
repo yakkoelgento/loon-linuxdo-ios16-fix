@@ -13,7 +13,7 @@
 # [linux.do iOS16 fix] patched static blocks=...
 
 [Script]
-http-response ^https:\/\/(?:cdn[0-9]*\.ldstatic\.com|linux\.do)\/.*\.js(?:\?.*)?$ script-path=https://raw.githubusercontent.com/yakkoelgento/loon-linuxdo-ios16-fix/main/linuxdo-ios16-staticblock-fix.js, requires-body=true, binary-body-mode=false, timeout=30, tag=linux.do iOS16 static-block fix, enable=true
+http-response ^https:\/\/(?:cdn[0-9]*\.ldstatic\.com|linux\.do)\/.*\.js(?:\?.*)?$ script-path=https://cdn.jsdelivr.net/gh/yakkoelgento/loon-linuxdo-ios16-fix@main/linuxdo-ios16-staticblock-fix.js, requires-body=true, binary-body-mode=false, timeout=30, tag=linux.do iOS16 static-block fix, enable=true
 
 [MITM]
 hostname = %APPEND% cdn3.ldstatic.com, *.ldstatic.com, linux.do

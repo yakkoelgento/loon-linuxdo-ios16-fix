@@ -1,6 +1,7 @@
 #!name=linux.do iOS16.2 WebKit 兼容修复
 #!desc=拦截 linux.do/ldstatic JS，把 Safari 16.2 不支持的 class static block 转成 static field，尝试修复卡在进入界面的问题。
 #!author=local-codex
+#!version=1.0.1
 #!homepage=https://linux.do/
 
 # 使用前提：

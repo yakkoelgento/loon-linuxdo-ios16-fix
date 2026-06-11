@@ -31,7 +31,8 @@
     }
     if (!headers['Content-Type'] && !headers['content-type']) headers['Content-Type'] = 'text/javascript; charset=utf-8';
     headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, max-age=0';
-    log('patched static blocks=' + count + ' url=' + url);
+    headers['X-Loon-LinuxDo-IOS16-Fix'] = 'static-blocks-' + count;
+    log('patched static blocks=' + count + ' bodyLen=' + (body ? body.length : 0) + ' newLen=' + newBody.length + ' url=' + url);
     $done({ status: $response.status, headers: headers, body: newBody });
   }
 
